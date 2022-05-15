@@ -126,13 +126,16 @@ def threeBodies():
 def manuallyLoadBodies():
     usrInput = ''
     while usrInput.lower() != 'n':
-        x = input("Enter the starting x coordinate: ")
-        y = input("Enter the starting y coordinate: ")
-        vx = input("Enter the starting x component of velocity: ")
-        vy = input("Enter the starting y component of velocity: ")
-        mass = float(input("Enter the mass: "))
-        name = input("Enter the name: ")
-        bodies.append(Body(np.array([x, y], dtype=float), np.array([vx, vy]), mass, name))
+        try:
+            x = float(input("Enter the starting x coordinate: "))
+            y = float(input("Enter the starting y coordinate: "))
+            vx = float(input("Enter the starting x component of velocity: "))
+            vy = float(input("Enter the starting y component of velocity: "))
+            mass = float(input("Enter the mass: "))
+            name = input("Enter the name: ")
+            bodies.append(Body(np.array([x, y], dtype=float), np.array([vx, vy]), mass, name))
+        except ValueError:
+            print("Enter a valid number!")
         usrInput = input("Continue? [y/n]: ")
 
 
