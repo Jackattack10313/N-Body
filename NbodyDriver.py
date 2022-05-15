@@ -4,8 +4,8 @@ from NbodyFunctions import *
 # Printing menu
 print("Select Menu Option:")
 print("1: Simulate Solar System (Suggested Interval: 86400s)")
-print("2: Simulate 2-Bodies (Suggested Interval: <5s)")
-print("3: Simulate 3-Bodies")
+print("2: Simulate 2 Bodies (Suggested Interval: <5s)")
+print("3: Simulate 3 Bodies (Suggested Interval: 1s)")
 print("4: Manually Enter Objects")
 valid = False
 selection = -1
