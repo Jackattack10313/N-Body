@@ -23,7 +23,6 @@ while not valid:
     elif selection == 2:
         twoBodies()
     elif selection == 3:
-        print("I run!")
         threeBodies()
     elif selection == 4:
         manuallyLoadBodies()
